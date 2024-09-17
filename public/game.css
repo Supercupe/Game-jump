@@ -1,0 +1,58 @@
+#score {
+    position: absolute; 
+    top: 50%;           
+    left: 50%;          
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    color: black;       
+    font-size: 24px;    
+}
+
+#game {
+    width: 700px;
+    height: 400px;
+    border: 2px solid black;
+    margin: auto;
+    background-image: url("https://img.freepik.com/premium-photo/stone-wall-lush-greenery-tranquil-landscape_1160572-4399.jpg?size=626&ext=jpg&ga=GA1.1.2107080620.1726477004&semt=ais_hybrid");
+    background-size: cover;
+}
+
+#naruto {
+    height: 145px;
+    width: 120px;
+    position: relative;
+    top: 180px;
+    background-image: url("https://www.pngall.com/wp-content/uploads/13/Naruto-Uzumaki-PNG.png");
+    background-size: cover;
+}
+
+#fireball {
+    height: 70px;
+    width: 80px;
+    position: relative;
+    top: 105px;
+    left: 620px;
+    background-image: url("https://www.pngarts.com/files/17/Fireball-PNG-Picture.png");
+    background-size: cover;
+    animation: rock 1.55s infinite;
+}
+
+@keyframes rock {
+    0% {
+        left: 620px;
+    }
+    100% {
+        left: -150px;
+    }
+}
+
+.jump-animation{
+    animation: jump 0.5s;
+}
+
+@keyframes jump {
+    0%{top: 180px;}
+    50%{top:60px;}
+    75%{top:60px;}
+    100%{top:180px;}
+}
