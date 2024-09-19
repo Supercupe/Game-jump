@@ -1,14 +1,11 @@
 <%- include('partials/header') %>
 
-  <div class="jumbotron text-center">
-    <div class="container">
-      <h1 class="display-3">0</h1>
-      <p class="highscore-text">This is your current highscore.</p>
-      <a class="btn btn-dark btn-lg" href="/play" role="button">Play</a>
-
-
-
-    </div>
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1 class="display-3"><%= highScore %></h1> 
+    <p class="highscore-text">This is your current high score.</p>
+    <a class="btn btn-dark btn-lg" href="/play" role="button">Play</a>
   </div>
+</div>
 
-  <%- include('partials/footer') %>
+<%- include('partials/footer') %>
